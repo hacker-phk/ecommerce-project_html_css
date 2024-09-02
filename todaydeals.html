@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Deals</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./todaydeals.css" />
+</head>
+<body>
+    <!-- Navbar (Reusing the main navbar) -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/logo.png" alt="Logo" />
+            </a>
+        </div>
+        <div class="searchbar">
+            <input type="text" placeholder="Search what you like..." />
+            <button onclick="searchFunction()">Search</button>
+        </div>
+        <div class="links">
+            <div><a href="./todaydeals.html" style="text-decoration: none; color: white;">Today Deals</a></div>
+            <div><a href="./electronics.html" style="text-decoration: none; color: white;">Electronics</a></div>
+            <div><a href="./fashion.html" style="text-decoration: none; color: white;">Fashions</a></div>
+        </div>
+        <div class="icons">
+            <div>
+                <img src="./images/user.svg" alt="User" />
+            </div>
+            <div>
+                <img src="./images/cart.svg" alt="Cart" />
+            </div>
+        </div>
+    </nav>
+
+    <!-- Today's Deals Section -->
+    <h1 class="card_section_header">Today's Deals</h1>
+    <div class="deals-grid">
+        <div class="deal-item">
+            <a href="deal1.html">
+                <img src="./images/deal1.jpg" alt="Deal 1" onclick="openModal('./images/deal1.jpg')">
+            </a>
+        </div>
+        <div class="deal-item">
+            <a href="deal2.html">
+                <img src="./images/deal2.jpg " alt="Deal 2" onclick="openModal('./images/deal2.jpg')">
+            </a>
+        </div>
+        <div class="deal-item">
+            <a href="deal3.html">
+                <img src="./images/deal3.jpg" alt="Deal 3" onclick="openModal('./images/deal3.jpg')">
+            </a>
+        </div>
+        <div class="deal-item">
+            <a href="deal4.html">
+                <img src="./images/deal4.jpg" alt="Deal 4" onclick="openModal('./images/deal4.jpg')">
+            </a>
+        </div>
+        <div class="deal-item">
+            <a href="deal5.html">
+                <img src="./images/deal5.jpg" alt="Deal 5" onclick="openModal('./images/deal5.jpg')">
+            </a>
+        </div>
+        <div class="deal-item">
+            <a href="deal6.html">
+                <img src="./images/deal6.jpg" alt="Deal 6" onclick="openModal('./images/banner4.jpg')">
+            </a>
+        </div>
+        <div class="deal-item">
+            <a href="deal7.html">
+                <img src="./images/deal7.jpg" alt="Deal 7" onclick="openModal('./images/banner4.jpg')">
+            </a>
+        </div>
+        <div class="deal-item">
+            <a href="deal8.html">
+                <img src="./images/deal8.jpg" alt="Deal 8" onclick="openModal('./images/banner4.jpg')">
+            </a>
+        </div>
+        <div class="deal-item">
+            <a href="deal9.html">
+                <img src="./images/deal9.jpg" alt="Deal 9" onclick="openModal('./images/banner4.jpg')">
+            </a>
+        </div>
+        <div class="deal-item">
+            <a href="deal10.html">
+                <img src="./images/deal10.jpg" alt="Deal 10" onclick="openModal('./images/banner4.jpg')">
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal for Enlarged Image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="enlargedImage">
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

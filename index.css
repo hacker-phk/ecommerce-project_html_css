@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #152125;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #38616f;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.searchbar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar input {
+    width: 70%;
+    padding: 7px;
+    border: 2px solid gray;
+    border-radius: 2px;
+    background-color: #ddd;
+}
+
+.searchbar p {
+    margin-left: 10px;
+    padding: 7px 15px;
+    background-color: #ddd;
+    border-radius: 2px;
+    color: #333;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links div {
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.links div:hover {
+    color: #ddd;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons img {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: #011116;
+}
+
+.body img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.card_section_header {
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    background-color: #c6c4d2;
+    color: #333;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #c6c4d2;
+    padding: 20px;
+}
